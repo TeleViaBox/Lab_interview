@@ -1,5 +1,6 @@
 // ref: https://cryptozombies.io/en/lesson/1
 // title: Making the Zombie Factory
+// status: lesson completed successfully
 
 pragma solidity >=0.5.0 <0.6.0;
 
