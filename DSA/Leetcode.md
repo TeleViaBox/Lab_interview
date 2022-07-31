@@ -1,6 +1,6 @@
 ##### 168. Excel Sheet Column Title
-py
-// status: not yet completed
+- py
+- status: not yet completed
 ```
 class Solution:
     def convertToTitle(self, columnNumber: int) -> str:
