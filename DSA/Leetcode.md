@@ -1,6 +1,13 @@
 ##### related knowledge:
 - 常用算法：贪心法、字符串处理、递归、BFS、DFS、分治、排序
 - 常用数据结构：数组/列表、队列、栈、链表、二叉树、哈希表
+##### todo(last renew: 16:52)
+36. Valid Sudoku
+13. Roman to Integer
+283. Move Zeroes
+168. Excel Sheet Column Title
+021. Merge Two Sorted Lists
+344. Reverse String
 
 ##### 13. Roman to Integer
 - c++
