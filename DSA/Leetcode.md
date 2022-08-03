@@ -9,6 +9,54 @@
 021. Merge Two Sorted Lists
 344. Reverse String
 
+##### 14. Longest Common Prefix
+6
+-py
+7
+-ref: https://zhuanlan.zhihu.com/p/106560131
+```
+"""
+# 横向扫描
+    def longestCommonPrefixHorizontalScan(self, strs):
+        """
+            Runtime: 28ms
+            Memory Usage: 12.8MB
+
+        """
+
+
+        # If null return ""
+        if len(strs) == 0:
+            return ""
+
+        prefix = strs[0]
+
+        for i in range(1, len(strs)):
+            while(strs[i].find(prefix) != 0):
+                prefix = prefix[:-1]
+                if len(prefix) == 0:
+                    return ""
+
+        return prefix
+# 纵向扫描
+   def longestCommonPrefixVerticalScan(self, strs):
+        """
+        Time 28 ms	Memory 12.8 MB
+
+        """
+
+        # If null return ""
+        if len(strs) == 0:
+            return ""
+
+        for i in range(len(strs[0])):
+            for j in range(1, len(strs)):
+                if i == len(strs[j]) or strs[0][i] != strs[j][i]: # i==len must be put at the front
+                    return strs[0][:i]
+        return strs[0]
+"""
+```
+
 ##### 13. Roman to Integer
 - c++
 - STATUS: FAIL
